@@ -1,0 +1,1 @@
+aws dynamodb create-table --table-name EC2InstanceStates --attribute-definitions AttributeName=instance_id,AttributeType=S --key-schema AttributeName=instance_id,KeyType=HASH --billing-mode PAY_PER_REQUEST
