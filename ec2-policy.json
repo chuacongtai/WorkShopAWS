@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "dynamodb:PutItem",
+        "dynamodb:GetItem",
+        "dynamodb:UpdateItem",
+        "ce:GetCostAndUsage",
+        "autoscaling:StartInstanceRefresh",
+        "autoscaling:DescribeAutoScalingGroups",
+        "sns:Publish"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
