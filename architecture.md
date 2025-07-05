@@ -1,11 +1,11 @@
  ## Sơ đồ Tổng thể
  ![Architecture Diagram](architecture.png)
  ## Sơ đồ Network
- ![Network Design](network_design.png)
+ ![Network Design](NetworkDesign.png)
  ## Sơ đồ Security
- ![Security Design](security_design.png)
+ ![Security Design](SecurityDesign.png)
  ## Sơ đồ Service & Resource
- ![Services & Resources](services_resources.png)
+ ![Services & Resources](ServiceandResourceDesign.png)
  ## Chính sách tùy chỉnh
  - Hibernation: CPU < 10% trong 30 phút, gọi `ec2.stop_instances(hibernate=True)`.
  - Stop/Start: Stop 18h, start 8h, dùng CloudWatch Events cron.
