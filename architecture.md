@@ -36,3 +36,15 @@
    - `HighCPUAlarm`: CPU > 80% trong 60 phút, thông báo qua SNS.
    - `SLAAlarm`: StatusCheckFailed > 0 trong 5 phút, thông báo qua SNS.
  - **Ngày 2 hoàn thành**: 04:53 PM +07, July 04, 2025.
+  ## Triển khai Ngày 3
+ - **Lambda Functions**: 
+   - `StopStartEC2`: Stop 18h, Start 8h.
+   - `HibernateEC2`: Hibernate khi CPU thấp.
+   - `RefreshEC2`: Refresh hàng tuần.
+   - `CostTrackerEC2`: Theo dõi chi phí hàng ngày.
+ - **CloudWatch Events**: 
+   - `StopStartRule`: Cron 18h/8h.
+   - `HibernateRule`: Cron hàng ngày.
+   - `RefreshRule`: Cron hàng tuần.
+   - `CostTrackerRule`: Cron hàng ngày.
+ - **Ngày 3 hoàn thành**: 11:08 PM +07, July 05, 2025.
