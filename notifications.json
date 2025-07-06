@@ -1,0 +1,16 @@
+[
+  {
+    "Notification": {
+      "NotificationType": "FORECASTED",
+      "ComparisonOperator": "GREATER_THAN",
+      "Threshold": 80,
+      "ThresholdType": "PERCENTAGE"
+    },
+    "Subscribers": [
+      {
+        "SubscriptionType": "EMAIL",
+        "Address": "your-real-email@example.com"
+      }
+    ]
+  }
+]

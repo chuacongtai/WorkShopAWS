@@ -1,0 +1,12 @@
+{
+  "BudgetName": "EC2MonthlyBudget",
+  "BudgetLimit": {
+    "Amount": "50",
+    "Unit": "USD"
+  },
+  "TimeUnit": "MONTHLY",
+  "CostFilters": {
+    "Service": ["Amazon Elastic Compute Cloud - Compute"]
+  },
+  "BudgetType": "COST"
+}
