@@ -1,0 +1,36 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          ["AWS/Budgets", "EstimatedCharges", "BudgetName", "EC2MonthlyBudgetNew"]
+        ],
+        "period": 86400,
+        "stat": "Maximum",
+        "region": "ap-southeast-1",
+        "title": "EC2 Cost Monitoring"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          ["CustomMetrics", "LambdaErrorCount", "LogGroupName", "/aws/lambda/StopStartEC2"]
+        ],
+        "period": 300,
+        "stat": "Sum",
+        "region": "ap-southeast-1",
+        "title": "Lambda Error Count"
+      }
+    }
+  ]
+}
