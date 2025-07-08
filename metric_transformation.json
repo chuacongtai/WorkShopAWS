@@ -1,0 +1,7 @@
+[
+  {
+    "metricName": "LambdaErrorCount",
+    "metricNamespace": "CustomMetrics",
+    "metricValue": "1"
+  }
+]   
