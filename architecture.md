@@ -5,7 +5,7 @@
  ## Sơ đồ Security
  ![Security Design](Security_Design.png)
  ## Sơ đồ Service & Resource
- ![Services & Resources](Service_and_ResourceDesign.png)
+ ![Services & Resources](Service_and_Resource_Design.png)
  ## Chính sách tùy chỉnh
  - Hibernation: CPU < 10% trong 30 phút, gọi `ec2.stop_instances(hibernate=True)`.
  - Stop/Start: Stop 18h, start 8h, dùng CloudWatch Events cron.
@@ -48,3 +48,7 @@
    - `RefreshRule`: Cron hàng tuần.
    - `CostTrackerRule`: Cron hàng ngày.
  - **Ngày 3 hoàn thành**: 11:08 PM +07, July 05, 2025.
+ ## Ngày 4: Tối ưu hóa và bàn giao
+- Tối ưu chi phí EC2 với lịch trình Stop/Start.
+- Cấu hình giám sát với CloudWatch Insights và Logs.
+- Tài liệu và backup cấu hình hoàn tất.
