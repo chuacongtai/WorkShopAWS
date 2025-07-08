@@ -1,6 +1,7 @@
 [
   {
     "Id": "1",
-    "Arn": "arn:aws:lambda:ap-southeast-1:572498579257:function:StopStartEC2"
+    "Arn": "arn:aws:states:ap-southeast-1:572498579257:stateMachine:EC2LifecycleWorkflow",
+    "RoleArn": "arn:aws:iam::572498579257:role/StepFunctionRole"
   }
 ]
