@@ -1,0 +1,33 @@
+{
+  "Comment": "EC2 Stop/Start Workflow",
+  "StartAt": "StopEC2",
+  "States": {
+    "StopEC2": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "StopStartEC2",
+        "Payload": {
+          "action": "stop"
+        }
+      },
+      "Next": "Wait"
+    },
+    "Wait": {
+      "Type": "Wait",
+      "Seconds": 300,
+      "Next": "StartEC2"
+    },
+    "StartEC2": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "StopStartEC2",
+        "Payload": {
+          "action": "start"
+        }
+      },
+      "End": true
+    }
+  }
+}
