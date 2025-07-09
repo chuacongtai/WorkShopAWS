@@ -1,0 +1,35 @@
+{
+  "LaunchTemplateName": "EC2LifecycleTemplate",
+  "LaunchTemplateData": {
+    "ImageId": "ami-0f42357470abbc3b4",
+    "InstanceType": "t2.micro",
+    "KeyName": "udemy-singapo-key",
+    "SecurityGroupIds": ["sg-0fafef6e1b4408906"],
+
+    "TagSpecifications": [
+      {
+        "ResourceType": "instance",
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Production"
+          },
+          {
+            "Key": "Project",
+            "Value": "EC2LifecycleManagement"
+          }
+        ]
+      }
+    ],
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "VolumeSize": 8,
+          "VolumeType": "gp2",
+          "DeleteOnTermination": true
+        }
+      }
+    ]
+  }
+}

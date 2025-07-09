@@ -1,0 +1,13 @@
+{
+  "AutoScalingGroupName": "EC2LifecycleASG",
+  "LaunchTemplate": {
+    "LaunchTemplateId": "lt-0810a0fc2780062bf",
+    "Version": "$Latest"
+  },
+  "MinSize": 1,
+  "MaxSize": 4,
+  "DesiredCapacity": 2,
+  "VPCZoneIdentifier": "subnet-0f4d50e7499b9a3f5,subnet-0c5dff3d06f783679",
+  "HealthCheckType": "EC2",
+  "HealthCheckGracePeriod": 300
+}
