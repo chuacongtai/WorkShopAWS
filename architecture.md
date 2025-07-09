@@ -52,3 +52,7 @@
 - Tối ưu chi phí EC2 với lịch trình Stop/Start.
 - Cấu hình giám sát với CloudWatch Insights và Logs.
 - Tài liệu và backup cấu hình hoàn tất.
+## Ngày 5: Bảo mật và hoàn thiện
+- Cấu hình bảo mật với IAM (và KMS).
+- Tự động hóa với Step Functions.
+- Đánh giá hiệu quả qua CloudWatch Dashboard.

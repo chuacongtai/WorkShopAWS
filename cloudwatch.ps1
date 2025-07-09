@@ -1,3 +1,4 @@
+$jsonContent = '[{"Id":"1","Arn":"arn:aws:lambda:ap-southeast-1:572498579257:function:StopStartEC2"}]'
 # Tạo file targets cho StopStartRule
 $stopStartJson = '[{\"Id\":\"1\",\"Arn\":\"arn:aws:lambda:ap-southeast-1:572498579257:function:StopStartEC2\"}]'
 [System.IO.File]::WriteAllLines("stop_start_targets.json", $stopStartJson, (New-Object System.Text.UTF8Encoding($False)))
@@ -12,6 +13,7 @@ aws events put-targets --rule StopStartRule --targets file://C:\Users\Admin\Desk
 aws lambda add-permission --function-name StopStartEC2 --statement-id StopStartPermission --action lambda:InvokeFunction --principal events.amazonaws.com --source-arn arn:aws:events:ap-southeast-1:572498579257:rule/StopStartRule
 
 # Tạo file targets cho HibernateRule
+
 $hibernateJson = '[{\"Id\":\"1\",\"Arn\":\"arn:aws:lambda:ap-southeast-1:572498579257:function:HibernateEC2\"}]'
 [System.IO.File]::WriteAllLines("hibernate_targets.json", $hibernateJson, (New-Object System.Text.UTF8Encoding($False)))
 
