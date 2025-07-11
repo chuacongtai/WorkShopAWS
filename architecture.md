@@ -1,5 +1,5 @@
- ## Sơ đồ Tổng thể
- ![Architecture Diagram](architecture.png)
+ <!-- ## Sơ đồ Tổng thể
+ ![Architecture Diagram](architecture.png) -->
  ## Sơ đồ Network
  ![Network Design](Network_Design.png)
  ## Sơ đồ Security
@@ -53,6 +53,12 @@
 - Cấu hình giám sát với CloudWatch Insights và Logs.
 - Tài liệu và backup cấu hình hoàn tất.
 ## Ngày 5: Bảo mật và hoàn thiện
-- Cấu hình bảo mật với IAM (và KMS).
+- Cấu hình bảo mật với IAM
 - Tự động hóa với Step Functions.
 - Đánh giá hiệu quả qua CloudWatch Dashboard.
+## Ngày 6: Tối ưu hiệu suất và bảo mật nâng cao
+- Auto Scaling: Đã triển khai với ASG "EC2LifecycleASG".
+- Cảnh báo: Đã tích hợp SNS và Alarms cho CPU và Budget.
+- Hiệu quả: Hệ thống hoạt động ổn định.
+## Ngày 7: Kiểm tra toàn diện hệ thống
+- Kiểm tra toàn diện hệ thống và hiệu suất.
